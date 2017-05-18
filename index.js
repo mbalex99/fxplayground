@@ -29,9 +29,6 @@ function beginEmitting(user) {
         },
         schema: [CarSchema]
     })
-    realm.write(() => {
-        realm.deleteAll()
-    })
     setInterval(() => {
         const payload = {
             make: faker.company.companyName(),
